@@ -4,6 +4,10 @@ This app allows you to add a glossary to a Novius OS website.
 
 This app adds a launcher and an enhancer in the website.
 
+## Installation
+
+A scss boilerplate is available in assets/sass. You can also include the css in static/css.
+
 ## Configuration
 
 Configuration can be done in config/front/enhancer.config.php

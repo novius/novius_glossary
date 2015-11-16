@@ -1,4 +1,5 @@
 <?php
+\Nos\I18n::current_dictionary('novius_glossary::common');
 return array(
     'controller_url' => 'admin/novius_glossary/crud',
     'model'          => 'Novius\Glossary\Model_Word',

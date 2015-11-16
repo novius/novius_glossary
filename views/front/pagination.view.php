@@ -1,6 +1,7 @@
 <div class="pagination">
     <?php
 
+    \Nos\I18n::current_dictionary('novius_glossary::common');
     echo $count.' '.__('words');
 
     $enhancerParams = array();

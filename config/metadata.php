@@ -10,6 +10,7 @@ return array(
     'extends'    => array(),
     'requires'   => array('noviusos_controller_front_enhancer'),
     'permission' => array(),
+    'i18n_file'  => 'novius_glossary::common',
     'launchers'  => array(
         'Novius\Glossary::Word' => array(
             'name'   => 'Glossary',

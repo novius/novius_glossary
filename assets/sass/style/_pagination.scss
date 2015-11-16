@@ -1,0 +1,21 @@
+.pagination {
+    text-align : right;
+
+    .links {
+        list-style-type : none;
+        padding         : 0;
+        margin          : 0;
+
+        li {
+            display : inline-block;
+
+            &.active {
+                font-weight : bold;
+            }
+            
+            &:not(:first-child) {
+                margin-left : 10px;
+            }
+        }
+    }
+}

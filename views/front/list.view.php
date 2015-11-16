@@ -1,4 +1,4 @@
-<div class="novius_glossary">
+<div class="novius-glossary">
     <?php
 
     if ($config['show-letter-list']) {

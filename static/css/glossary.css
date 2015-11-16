@@ -1,0 +1,25 @@
+.novius-glossary .letters {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .novius-glossary .letters li {
+    display: inline-block; }
+    .novius-glossary .letters li.active {
+      font-weight: bold; }
+    .novius-glossary .letters li:not(:first-child) {
+      margin-left: 10px; }
+
+.novius-glossary .pagination {
+  text-align: right; }
+  .novius-glossary .pagination .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .novius-glossary .pagination .links li {
+      display: inline-block; }
+      .novius-glossary .pagination .links li.active {
+        font-weight: bold; }
+      .novius-glossary .pagination .links li:not(:first-child) {
+        margin-left: 10px; }
+
+/*# sourceMappingURL=glossary.css.map */

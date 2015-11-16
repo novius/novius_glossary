@@ -21,7 +21,13 @@ return array(
             ),
         ),
     ),
-    'enhancers'  => array(),
+    'enhancers'  => array(
+        'novius_glossary' => array( // key must be defined
+            'title'       => 'Glossary',
+            'desc'        => '',
+            'urlEnhancer' => 'novius_glossary/front/enhancer/route', // URL of the enhancer
+        ),
+    ),
     'icons'      => array(
         16 => 'static/apps/novius_glossary/img/icon/16.png',
         32 => 'static/apps/novius_glossary/img/icon/32.png',

@@ -2,6 +2,12 @@
 
 namespace Novius\Glossary;
 
+/**
+ * Class Model_Word
+ *
+ * @property string word_title
+ * @package Novius\Glossary
+ */
 class Model_Word extends \Nos\Orm\Model
 {
     protected static $_primary_key = array('word_id');

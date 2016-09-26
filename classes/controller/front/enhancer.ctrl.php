@@ -23,7 +23,7 @@ class Controller_Front_Enhancer extends \Enhancer\Controller_Front_Application_E
         $numSymbol    = \Arr::get($this->config, 'numeric-symbol');
         $lettersQuery = DB::select(
             array(
-                \DB::expr('LOWER(SUBSTR('.Model_Word::title_property().',1,1))'), 'initial'
+                \DB::expr('LOWER(SUBSTR('.Model_Word::title_property().',1,1)) collate utf8_general_ci '), 'initial'
             )
 
         )
@@ -32,9 +32,9 @@ class Controller_Front_Enhancer extends \Enhancer\Controller_Front_Application_E
             ->order_by('initial', 'asc')
             ->execute();
         $letters      = array();
-
         foreach ($lettersQuery as $let) {
-            if (!preg_match('/[A-Za-z]/', $let['initial'])) {
+            $let['initial'] = iconv('UTF-8', 'ASCII//TRANSLIT', $let['initial']);
+            if (!preg_match('/[a-zéèà]/i', $let['initial'])) {
                 $let['initial'] = $numSymbol;
             }
             if (in_array($let['initial'], $letters)) {

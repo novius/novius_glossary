@@ -34,7 +34,7 @@ class Controller_Front_Enhancer extends \Enhancer\Controller_Front_Application_E
         $letters      = array();
         foreach ($lettersQuery as $let) {
             $let['initial'] = iconv('UTF-8', 'ASCII//TRANSLIT', $let['initial']);
-            if (!preg_match('/[a-zéèà]/i', $let['initial'])) {
+            if (!preg_match('/[a-z]/i', $let['initial'])) {
                 $let['initial'] = $numSymbol;
             }
             if (in_array($let['initial'], $letters)) {

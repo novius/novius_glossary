@@ -5,7 +5,7 @@ $curLetter = null;
 /** @var \Novius\Glossary\Model_Word[] $items */
 foreach ($items as $item) {
 
-$letter = \Str::lower(\Str::sub($item->title_item(), 0, 1));
+$letter = iconv('UTF-8', 'ASCII//TRANSLIT',\Str::lower(\Str::sub($item->title_item(), 0, 1)));
 
 if ($letter != $curLetter) {
 if ($curLetter !== null) {
